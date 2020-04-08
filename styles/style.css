@@ -1,0 +1,1112 @@
+@charset "UTF-8";
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+}
+
+body {
+  background: #03697c;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Walter Turncoat', cursive;
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: white;
+}
+
+input {
+  background: #03697c;
+  border-bottom: 1px solid #08fded;
+  width: 45%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+textarea {
+  width: 100%;
+  background-color: transparent;
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 2% 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  display: inline-block;
+  padding-left: 5%;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+
+header {
+  height: 100vh;
+  background: #03697c;
+}
+
+header .backgroundHero {
+  background-image: url("../assets/home-header.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.wrapperHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.wrapperHero h1 {
+  width: 50%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+
+.wrapperHero .hero {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  right: 341px;
+  top: 26px;
+}
+
+.wrapperHero .hero img {
+  width: 100%;
+  max-width: 600px;
+}
+
+section.headings {
+  background: #03697c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 10%;
+}
+
+section.headings .topPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.headings .topPosts .headingPost {
+  width: 50%;
+}
+
+section.headings .topPosts .headingPost p {
+  width: 85%;
+  padding-top: 3%;
+}
+
+.iconBox {
+  background: #08fded;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 8px;
+  width: 55px;
+  text-align: center;
+}
+
+.posts {
+  background: #474bb5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10% 0;
+}
+
+.posts img {
+  width: 100%;
+  max-width: 70%;
+}
+
+.posts .postImageLeftHolder {
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+  margin-top: 14%;
+}
+
+.posts .postText {
+  width: 50%;
+}
+
+.posts .postWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.posts .postWrapper a {
+  margin-top: 5%;
+}
+
+.posts .postImageLeft {
+  -webkit-box-shadow: 22px 22px 0px -5px #08fded;
+  box-shadow: 22px 22px 0px -5px #08fded;
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+}
+
+.posts .postImageRight {
+  -webkit-box-shadow: -22px 22px 0px -5px #08fded;
+  box-shadow: -22px 22px 0px -5px #08fded;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  z-index: 4;
+}
+
+.posts .postImageRightHolder {
+  width: 50%;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  position: relative;
+}
+
+.posts .post1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.posts .post2 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+section.middlePost {
+  background: #03697c;
+  padding: 10% 0;
+}
+
+section.middlePost .middlePostText {
+  text-align: center;
+}
+
+section.middlePost .middlePostText p {
+  margin-bottom: 5%;
+}
+
+section.fullWidthBanner {
+  background: #03697c;
+  background-image: url("../assets/banner.jpg");
+  width: 100%;
+  height: 45vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-size: cover;
+}
+
+section.bottomPosts {
+  background: #03697c;
+  padding: 10% 0;
+}
+
+section.bottomPosts .wrapperBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.bottomPosts .bottomPostImage {
+  width: 40%;
+}
+
+section.bottomPosts .bottomPostText {
+  width: 40%;
+}
+
+section.bottomPosts .bottomPostText p {
+  margin-bottom: 5%;
+}
+
+section.gallery {
+  background: #4549b3;
+  padding: 5% 0;
+}
+
+section.gallery .galleryBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.gallery .galleryBox img {
+  width: 30%;
+}
+
+footer {
+  background: #044779;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+header .contactHero {
+  background-image: url("../assets/contact-header.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.wrapperHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.wrapperHero h2 {
+  width: 50%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.contactBody {
+  background: #03697c;
+}
+
+.contactWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.contactMain {
+  position: relative;
+  width: 60%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  height: 50vh;
+}
+
+main.contactMain form.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #474bb5;
+  -webkit-box-shadow: 21px 29px 0px 3px #08fded;
+  box-shadow: 21px 29px 0px 3px #08fded;
+  position: absolute;
+  bottom: 141px;
+  right: 0;
+  margin: -81px;
+  padding: 5px;
+}
+
+main.contactMain form.contactForm label {
+  visibility: hidden;
+}
+
+main.contactMain form.contactForm .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+main.contactMain form.contactForm .nameEmail .email,
+main.contactMain form.contactForm .nameEmail .name {
+  background: #474bb5;
+}
+
+.commentSubmit {
+  width: 100%;
+}
+
+.commentSubmit .comment {
+  width: 100%;
+  background: #474bb5;
+  border: 1px solid white;
+}
+
+.commentSubmit .submit {
+  width: 100%;
+  height: 42px;
+  margin-top: 25px;
+  background: deepskyblue;
+  color: #474bb5;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+aside.contactAside {
+  color: white;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+aside.contactAside .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+aside.contactAside .socialMedia .icon {
+  width: 25%;
+}
+
+header.blogHeader {
+  height: 80vh;
+  margin-bottom: -125px;
+}
+
+header.blogHeader .blogHero {
+  background-image: url("../assets/blog-header.jpg");
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.blogHeroWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.blogHeroWrapper h2 {
+  width: 50%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.blogWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main.blogMain {
+  width: 60%;
+  padding-top: 5%;
+}
+
+main.blogMain p {
+  margin: 10px 0 20px 0;
+}
+
+main.blogMain .blogPostHolder {
+  border-left: 1px solid #08fded;
+  margin-top: -23px 0 0 -49px;
+  padding-left: 25px;
+  margin: -21px 0 0 -20px;
+  padding-top: 50px;
+  border-bottom: 1px solid #08fded;
+}
+
+main.blogMain .blogPostText {
+  padding-top: 5%;
+  line-height: 25px;
+}
+
+main.blogMain .blogPost {
+  width: 100%;
+}
+
+main.blogMain .blogPost img {
+  width: 100%;
+  -webkit-box-shadow: -20px 22px 0px 0px #08fded;
+  box-shadow: -20px 22px 0px 0px #08fded;
+}
+
+main.blogMain .commentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main.blogMain .commentWrapper .commentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5% 0;
+}
+
+main.blogMain .commentWrapper .commentBox .commentImageBox {
+  padding-right: 25px;
+}
+
+main.blogMain form.blogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #03697c;
+  padding-bottom: 10%;
+}
+
+main.blogMain form.blogForm .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 2%;
+}
+
+main.blogMain form.blogForm label {
+  visibility: hidden;
+}
+
+main.blogMain form.blogForm .commentSubmit {
+  width: 100%;
+}
+
+main.blogMain form.blogForm .commentSubmit .comment {
+  width: 100%;
+  background: #03697c;
+  border: 1px solid #08fded;
+}
+
+main.blogMain form.blogForm .commentSubmit .submit {
+  width: 100%;
+  height: 42px;
+  margin-top: 25px;
+  background: deepskyblue;
+  color: #474bb5;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+aside.blogAside {
+  background: #03697c;
+  width: 30%;
+  margin-top: 224px;
+}
+
+aside.blogAside img {
+  width: 90%;
+  -webkit-box-shadow: 27px 20px 0px 0px #474bb5;
+  box-shadow: 27px 20px 0px 0px #474bb5;
+}
+
+aside.blogAside .asidePostHolder {
+  width: 90%;
+  background: #474bb5;
+  padding: 10% 11.5%;
+  line-height: 22px;
+  margin-left: 27px;
+}
+
+aside.blogAside .asidePostHolder .asidePost ul {
+  color: white;
+  list-style: none;
+}
+
+aside.blogAside .asidePostHolder .asidePost ul li::before {
+  content: "•";
+  color: #08fded;
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+.row {
+  margin-left: 2%;
+  margin-right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.col-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.3333%;
+          flex: 0 0 8.3333%;
+}
+
+.col-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16.6666%;
+          flex: 0 0 16.6666%;
+}
+
+.col-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333%;
+          flex: 0 0 33.3333%;
+}
+
+.col-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.6666%;
+          flex: 0 0 41.6666%;
+}
+
+.col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.col-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.3333%;
+          flex: 0 0 58.3333%;
+}
+
+.col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.6666%;
+          flex: 0 0 66.6666%;
+}
+
+.col-9 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+}
+
+.col-10 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 83.3333%;
+          flex: 0 0 83.3333%;
+}
+
+.col-11 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 91.6666%;
+          flex: 0 0 91.6666%;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+[class*="col-"] {
+  margin: 0 0 10px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: 'Walter Turncoat', cursive;
+  z-index: 30;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1rem;
+  width: 127px;
+  height: 40px;
+  background: #08fded;
+  margin: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 1180) {
+  main.blogMain.blogPost {
+    width: auto;
+    position: relative;
+    right: 0;
+  }
+  main.blogMain.blogPost img {
+    width: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapperHero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.bottomPosts .wrapperBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.bottomPosts .wrapperBottom .bottomPostImage {
+    width: auto;
+  }
+}
+
+@media (max-width: 955px) {
+  .contactWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactWrapper main {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contactWrapper main .contactMain {
+    margin-bottom: 35%;
+  }
+  .contactWrapper aside {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 15%;
+  }
+}
+
+@media (max-width: 929px) {
+  section.headings .topPosts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.headings .topPosts .headingPost {
+    margin-top: 5%;
+  }
+  .posts {
+    background: #474bb5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 10% 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .posts .postImageRight, .posts .postImageLeft {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+  .posts .postImageRightHolder {
+    margin-top: 5%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 872px) {
+  .blogWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main.blogMain form.blogForm .nameEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5% 2%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.blogMain form.blogForm .nameEmail input {
+    width: 100%;
+  }
+  aside.blogAside .asidePostHolder {
+    width: 90%;
+    background: #474bb5;
+    padding: 10% 11.5%;
+    line-height: 22px;
+    margin-left: 27px;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 741px) {
+  section.gallery .galleryBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.gallery .galleryBox img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 624px) {
+  .wrapperHero h2 {
+    width: 100%;
+  }
+  main.contactMain form.contactForm .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.contactMain form.contactForm .nameEmail input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  section.bottomPosts .bottomPostText p {
+    margin-bottom: 10%;
+  }
+}

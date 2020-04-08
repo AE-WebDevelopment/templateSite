@@ -1,0 +1,72 @@
+@media (max-width:872px) {
+    .blogWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main.blogMain form.blogForm .nameEmail {
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 5% 2%;
+        flex-direction: column;
+        input {
+            width: 100%;
+        }
+
+    }
+
+    aside.blogAside .asidePostHolder {
+
+        width: 90%;
+        background: #474bb5;
+        padding: 10% 11.5%;
+        line-height: 22px;
+        margin-left: 27px;
+        margin-bottom: 10%;
+
+    }
+}
+
+
+@media(max-width:741px) {
+    section.gallery .galleryBox {
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:624px)
+{
+    .wrapperHero h2 {
+
+        width: 100%;
+    }
+
+
+
+        main.contactMain form.contactForm .nameEmail {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+        }
+}
